@@ -1,0 +1,76 @@
+.wrap{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+}
+.title{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  flex: 1;
+  font-size: 32rpx;
+}
+.active{
+  color: #ff0000;
+  border-bottom: 8rpx solid #ff0000;
+}
+.slide-image{
+  width: 100%;
+}
+.clo_wrap{
+  height: 200rpx;
+  display: flex;
+  border-bottom: 1rpx solid #ddd;
+  padding-top: 20rpx;
+  box-sizing: border-box
+}
+.clo_left{
+  flex: 3;
+}
+.clo_cont{
+   flex: 6;
+}
+.clo_right{
+  flex: 1;
+}
+.clo_right image{
+  width: 100rpx;
+  height:100rpx;
+  margin-top: 80rpx;
+}
+.clo_left image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.name{
+  font-size: 28rpx;
+  color: #666;
+}
+.price{
+  color: #ff0000;
+}
+input{
+  display: inline-block;
+}
+.search{
+  display: inline-block;
+  margin-top: 20rpx;
+}
+.lun_wrap{
+  margin-top: 30rpx;
+}
+.song{
+  font-size: 32rpx;
+  line-height: 80rpx;
+  /* margin-top: 60rpx; */
+}
+.singer{
+  font-size: 24rpx;
+  color: #999;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ddd;
+}
+.loading{
+  color: blue;
+  text-align: center;
+}

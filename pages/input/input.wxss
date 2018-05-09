@@ -1,0 +1,69 @@
+/* pages/input/input.wxss */
+page{
+  height: 100%;
+  background: #ffe4e1;
+}
+.clo_wrap{
+  height: 240rpx;
+  /* display: flex; */
+  /* border-bottom: 1rpx solid #ddd; */
+  margin-top: 40rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+}
+.clo_left{
+  width: 25%;
+  float: left;
+}
+.clo_cont{
+   width: 75%;
+  float: left;
+}
+.clo_right image{
+  width: 100rpx;
+  height:100rpx;
+  margin-top: 80rpx;
+}
+.clo_left image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.name{
+  font-size: 28rpx;
+  color: #666;
+}
+.price{
+  color: #ff0000;
+}
+.number{
+  float: left;
+}
+.del{
+  float: right;
+  margin-right: 40rpx;
+  margin-bottom: 20rpx;
+}
+.number button,.number input{
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx
+}
+.del image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.all{
+  margin-top: 40rpx;
+}
+.all button{
+  font-size: 28rpx;
+  width: 200rpx;
+  height: 60rpx;
+  float: right;
+  background: #ff0000;
+  color: #fff;
+}

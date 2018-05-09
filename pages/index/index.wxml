@@ -1,0 +1,48 @@
+<view class='wrap'>
+  <block wx:for="{{navbar}}">
+    <view bindtap='tabs' data-id='{{index}}' class='title {{index==currentTab?"active":""}}'>{{item}}</view>
+  </block>
+</view>
+<view class='lun_wrap' hidden='{{currentTab!==0}}'>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular='true'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+       <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+    
+  <icon type='search'></icon><input bindinput='search' class='key' placeholder='搜索想要的歌曲'></input>
+  <text bindtap='find'>搜索</text>
+  <view>
+    <scroll-view scroll-y bindscrolltolower='bottom' style='height:360px'>
+      <block wx:for='{{musicArr}}'>
+        <view class='song'>{{item.albumname}}</view>
+        <view class='singer'>{{item.singer[0].name}}</view>
+      </block>
+      <view hidden='{{dataHide}}'>没有搜到数据</view>
+      <view class='loading' hidden='{{bottomHide}}'>加载中···</view>
+    </scroll-view>
+  </view>
+</view>
+<view hidden='{{currentTab!==1}}'>
+
+  <block wx:for='{{goodslist}}'>
+  <!-- <navigator> -->
+
+  <view class='clo_wrap'>
+    <view class='clo_left'>
+      <image src='{{item.imgUrl}}'></image>
+    </view>
+    <view class='clo_cent'>
+      <view class='name'>{{item.name}}</view>
+      <view class='price'>￥{{item.price}}</view>
+    </view>
+    <view class='clo_right' bindtap='add'>
+      <image src='../../images/icon_cart_selected.png' data-id='{{item.id}}'></image>
+    </view>
+  </view>
+  <!-- </navigator> -->
+  </block>
+</view>
+

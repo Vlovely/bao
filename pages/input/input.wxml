@@ -1,0 +1,30 @@
+  <block wx:for='{{arr}}'>
+  <!-- <navigator> -->
+  <view class='clo_wrap'>
+    <view class='clo_left'>
+      <image src='{{item.imgUrl}}'></image>
+    </view>
+    <view class='clo_cent'>
+      <view class='name'>{{item.name}}</view>
+      <view class='price'>￥{{item.price}}</view>
+      <view>
+        <view class='number'>
+          <button bindtap='minus' data-id='{{index}}'>-</button>
+          <input value='{{item.times}}' disabled='true'></input>
+          <button bindtap='plus' data-id='{{index}}'>+</button>
+        </view>
+        <view class='del'>
+          <image data-id='{{index}}' bindtap='del' src='../../images/icon_delete.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- </navigator> -->
+  </block>
+   <view class='all' hidden='{{!nocart}}'>
+    <text>合计：￥{{sum}}</text>
+    <button>去结算({{pay}})</button>
+  </view> 
+  <view hidden='{{nocart}}'>
+   你的购物车里面什么都没有
+  </view>

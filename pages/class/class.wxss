@@ -1,0 +1,33 @@
+/* pages/class/class.wxss */
+/* pages/class/class.wxss */
+.left{
+  float: left;
+  width: 25%
+}
+.left view{
+  line-height: 80rpx;
+  background: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+  font-size: 28rpx;
+  text-align: center;
+  /* width: 235rpx */
+}
+.left .active{
+  background: #fff;
+}
+.right{
+  float: left;
+  width: 75%
+}
+image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 40rpx;
+  margin-top: 40rpx;
+}
+.img_font text{
+  font-size: 28rpx;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}

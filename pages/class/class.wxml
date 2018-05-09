@@ -1,0 +1,14 @@
+<!--pages/class/class.wxml-->
+<!--pages/class/class.wxml-->
+<view class='left'>
+  <block wx:for='{{arr}}'>
+    <view bindtap='clk' data-id='{{index}}' class='{{index==curren?"active":""}}'>{{item.tree.desc}}</view>
+  </block>
+</view>
+<view class='right'>
+  <view wx:for='{{arr[curren].tree.nodes}}'>
+    {{item.tree.desc}}
+  </view>
+  
+</view>
+

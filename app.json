@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/input/input",
+    "pages/class/class",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "某宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/bottomNav/home.png",
+        "selectedIconPath": "images/bottomNav/home_select.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "分类",
+        "iconPath": "images/bottomNav/classify.png",
+        "selectedIconPath": "images/bottomNav/classify_select.png"
+      },
+      {
+        "pagePath": "pages/input/input",
+        "text": "购物车",
+        "iconPath": "images/bottomNav/cart.png",
+        "selectedIconPath": "images/bottomNav/cart_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/bottomNav/mine.png",
+        "selectedIconPath": "images/bottomNav/mine_select.png"
+      }
+    ]
+  }
+}
